@@ -1,0 +1,18 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+// Variables
+@import 'variables';
+
+// Site
+@import 'global';
+@import 'header';
+@import 'pages/home';
+@import 'pages/quemsomos';
+@import 'pages/vendeterreno';
+@import 'pages/imoveis';
+@import 'pages/contato';
+@import 'footer';
+@import 'responsive';

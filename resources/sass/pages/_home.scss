@@ -1,0 +1,317 @@
+#home {
+	/*** Banner Section ***/
+	.banner-section {
+		position: relative;
+
+		.searchblock__content {
+			background-color: rgb(0 74 148 / 80%);
+			border-radius: 5px;
+			top: 60%;
+			left: 0;
+			right: 0;
+			position: absolute;
+			text-align: center;
+			width: 1100px;
+			margin: 0 auto;
+			padding: 10px;
+			z-index: 9;
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+
+			.filtros__form {
+				.filtros__form__item {
+					select {
+						border: 0;
+						font-size: 14px;
+						padding: 10px;
+					}
+					input {
+						border: 0;
+						font-size: 14px;
+						padding: 10px;
+					}
+
+					button {
+						background-color: $secondcolor;
+						color: #fff;
+						width: 100%;
+						font-size: 14px;
+						padding: 9px;
+					}
+				}
+			}
+		}
+	}
+
+	.banner-carousel {
+		position: relative;
+
+		.slide-item {
+			position: relative;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			padding: 200px 0 200px;
+			height: 650px;
+
+			.title {
+				text-align: center;
+
+				h1 {
+					font-size: 50px;
+					font-weight: 700;
+					color: #fff;
+					text-transform: uppercase;
+				}
+				h4 {
+					font-size: 22px;
+					font-weight: 400;
+					color: #fff;
+				}
+			}
+		}
+
+		.owl-nav {
+			position: absolute;
+			left: 0;
+			top: 40%;
+			width: 100%;
+		}
+
+		.owl-next,
+		.owl-prev {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100px;
+			width: 30px;
+			background-color: rgba(255, 255, 255, 0.9);
+			color: #222222;
+			font-size: 20px;
+			line-height: 100px;
+			text-align: center;
+			-webkit-transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+		}
+
+		.owl-next {
+			left: auto;
+			right: 0;
+		}
+
+		.owl-next:hover,
+		.owl-prev:hover {
+			background-color: rgba(255, 255, 255, 0.9);
+			color: #222222;
+		}
+	}
+
+	.imoveis-home {
+		padding: 40px 0;
+
+		.imoveis {
+			.item {
+				margin: 10px;
+				-webkit-box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.7);
+				box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.7);
+
+				.img {
+					position: relative;
+					z-index: 1;
+					margin-bottom: 0;
+
+					.tag {
+						position: absolute;
+						top: 15px;
+						left: 15px;
+						font-size: 13px;
+						background: $secondcolor;
+						padding: 2px 8px;
+						color: #fff;
+						border-radius: 3px;
+					}
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.label-categoria {
+					background-color: #4077af;
+					color: #fff;
+				}
+
+				.preco {
+					color: #4077af;
+					font-size: 18px;
+					font-weight: 600;
+				}
+
+				.content {
+					background: #fff;
+
+					span {
+						display: block;
+					}
+
+					.title {
+						font-weight: 700;
+						margin-bottom: 5px;
+					}
+
+					.price {
+						color: $secondcolor;
+						margin-bottom: 5px;
+					}
+					.description {
+						font-size: 12px;
+						color: #666;
+						margin-bottom: 5px;
+						height: 55px;
+						overflow: hidden;
+					}
+
+					.info {
+						padding: 8px 15px;
+
+						.property-meta-list {
+							overflow: hidden;
+							margin: 0;
+
+							> li {
+								display: inline-block;
+								margin-right: 10px;
+
+								span.label-content {
+									font-size: 16px;
+									font-weight: 600;
+									display: inline-block;
+
+									i {
+										color: #666;
+									}
+								}
+
+								span.label-property {
+									font-size: 14px;
+									display: inline-block;
+								}
+
+								.btn {
+									background: $secondcolor;
+									color: #fff;
+									font-size: 13px;
+									padding: 1px 5px;
+								}
+
+								&:last-child {
+									float: right;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.owl-theme {
+				.owl-dots {
+					.owl-dot {
+						span {
+							width: 7px;
+							height: 7px;
+						}
+					}
+
+					.owl-dot.active span,
+					.owl-dot:hover span {
+						background: $secondcolor;
+					}
+				}
+			}
+		}
+	}
+
+	.sobre {
+		padding: 0 12px;
+		background: $secondcolor;
+
+		.texto {
+			padding: 60px;
+			color: #fff;
+
+			h2 {
+				font-size: 35px;
+				margin-bottom: 20px;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+
+			.saiba-mais {
+				font-size: 14px;
+				font-weight: 700;
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+				display: flex;
+				align-items: center;
+
+				i {
+					font-size: 40px;
+					margin-right: 10px;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.imoveis-entregues {
+		background-color: #eaeaea;
+
+		.categoria {
+			.label {
+				background: rgb(51 51 51 / 33%);
+				position: relative;
+				top: -107px;
+				padding: 20px;
+
+				h3 {
+					color: #fff;
+					font-weight: 600;
+				}
+
+				.btn {
+					background: $secondcolor;
+					color: #fff;
+					font-size: 14px;
+					padding: 1px 5px;
+				}
+			}
+		}
+	}
+
+	.blog {
+		.posts {
+			.card-title {
+				font-size: 18px;
+				font-weight: 700;
+			}
+			.card-date {
+				font-size: 12px;
+			}
+
+			.card-text {
+				font-size: 12px;
+			}
+
+			.card-link {
+				color: #333;
+				font-size: 12px;
+			}
+		}
+	}
+}
